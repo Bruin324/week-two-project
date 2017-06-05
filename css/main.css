@@ -1,0 +1,339 @@
+/*
+text: #0B1942
+inline link: #00B7D3
+h2 background: #0B1942
+h2 color: #FFFFFF
+logo background: #F5005B
+navigation background: #7DDFE8
+navigation link color: #FFFFFF
+"Home" nav link background: #00A5BF
+"Calendar" nav link background: #00B7D3
+"Join" nav link background: #00D5E7
+"Up Next" background: #0B1942
+"Up Next" card background #E2E2E2
+calendar background and treatments: #0B1942
+calendar highlighted day: #F5005B
+button background: #F5005B
+copyright text: #FFFFFF
+*/
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+img {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+}
+
+a {
+  color: #00B7D3;
+  cursor: pointer;
+}
+
+/*///////////////////////////////////////
+                NAV
+///////////////////////////////////////*/
+nav {
+  display:flex;
+}
+
+.logo {
+  background-color: #F5005B;
+  padding: 10px;
+}
+
+.nav-links-wrapper {
+  background-color: #7DDFE8;
+  width: 100%;
+}
+
+.nav-link {
+    height: calc(100% / 3);
+    text-align: center;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+    text-decoration: none;
+}
+
+.nav-link {
+  color: #FFFFFF;
+}
+
+.home {
+  background-color: #00A5BF;
+}
+
+.calendar {
+  background-color: #00B7D3;
+}
+
+.join {
+  background-color: #00D5E7;
+}
+
+footer {
+  background-color: #7DDFE8;
+  color: #FFFFFF;
+}
+
+.copyright {
+  text-align: center;
+  padding: 30px;
+  font-size: 1rem;
+  flex-basis: 30%;
+}
+
+/*///////////////////////////////////////
+            GET INVOLVED
+///////////////////////////////////////*/
+
+.get-involved {
+  padding: 0px 20px 20px;
+}
+
+h2 {
+  color: #0B1942;
+  font-weight: 400;
+}
+
+.involved-header {
+  background-color: #0B1942;
+  color: #FFFFFF;
+  padding: 5px 20px;
+  font-size: 1.5rem;
+  margin: 1em 0;
+}
+
+/*///////////////////////////////////////
+                UP NEXT
+///////////////////////////////////////*/
+
+.up-next {
+  background-color: #0B1942;
+  padding: 10px;
+}
+
+h1 {
+  color: #FFFFFF;
+  padding: 10px 30px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.up-next-main {
+  background-color: #E2E2E2;
+  display: flex;
+  padding: 20px;
+  margin: 20px 10px;
+}
+
+.main-poster-wrapper img{
+  width: 40vw;
+}
+
+.main-film-info-wrapper {
+  margin: 1% 0 0 4%;
+  width: 100%;
+}
+
+.main-film-name a {
+  font-size: 1.5rem;
+}
+
+.main-film-date {
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+.discussion {
+  font-size: 1rem;
+}
+
+.discussion ul {
+
+}
+
+.discussion-point {
+  line-height: 2em;
+    list-style-type: circle;
+}
+
+.up-next-future {
+  background-color: #E2E2E2;
+  display: flex;
+  padding: 1rem 1rem 0 1rem;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+.future-film {
+  width: calc(47vw - 2rem);
+  padding-bottom: 1rem;
+}
+
+.future-film img{
+  width: 100%;
+}
+
+.future-film-title {
+  padding: .5rem 0 .5rem;
+}
+
+.future-film-title a, .future-film-date {
+  font-size: 1rem;
+}
+
+
+/*///////////////////////////////////////
+                CALENDAR
+///////////////////////////////////////*/
+
+
+
+/*///////////////////////////////////////
+                JOIN FILM CLUB
+///////////////////////////////////////*/
+
+.join-club {
+  padding: 0px 20px 20px;
+}
+
+.profile-img {
+  margin: 2em 0;
+}
+
+.profile-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.input-field label {
+  display: block;
+}
+
+.input-field input {
+  width: 100%;
+  font-size: 16px;
+  height: 2em;
+}
+
+.profile-info .input-field {
+  margin: 1em 0;
+}
+
+.profile-info .input-field label {
+  margin-bottom: .5em;
+}
+
+.profile-genre {
+  padding: 1.5em 0;;
+}
+
+.input-genre {
+  margin: 1em 0;
+}
+
+.add-input {
+  padding: 1.5em 0;
+}
+
+.submit-btn input{
+  background-color: #F5005B;
+  border: 0;
+  padding: 1em;
+  color: #FFFFFF;
+}
+
+
+/*///////////////////////////////////////
+/////////////////////////////////////////
+              TABLET AND UP LAYOUT
+/////////////////////////////////////////
+///////////////////////////////////////*/
+
+@media screen and (min-width: 545px) {
+  .logo img{
+    height: 100px;
+  }
+  .nav-links-wrapper {
+    display:flex;
+  }
+
+  .nav-link {
+    width: calc(100% / 6);
+    height: 100%;
+    vertical-align: middle;
+    line-height: 5rem;
+  }
+
+  footer {
+    display: flex;
+  }
+
+
+  .get-involved {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .get-involved h2 {
+    width: 100%;
+  }
+
+  .watch, .take-notes, .meetup {
+    width: calc((100% / 3) - .5rem);
+  }
+
+  .future-film {
+    width: calc(25vw - 2rem);
+    padding-bottom: 1rem;
+  }
+
+  .copyright {
+    line-height: 5rem;
+    padding: 20px;
+  }
+}
+
+
+
+/*///////////////////////////////////////
+///////////////////////////////////////
+              DESKTOP LAYOUT
+///////////////////////////////////////
+///////////////////////////////////////*/
+@media screen and (min-width: 769px) {
+  .up-next {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .up-next h1 {
+    width: 100%;
+  }
+
+  .up-next-main {
+    width: calc(50% - 20px);
+    height: 100%;
+    margin: 10px;
+  }
+
+  .main-poster-wrapper img {
+    width: 25vw;
+  }
+
+  .up-next-future {
+    width: calc(50% - 20px);
+  }
+}

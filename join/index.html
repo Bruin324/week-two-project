@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Film Club - Join</title>
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="../images/filmclub.png" alt="Film Club Logo">
+        </div>
+        <div class="nav-links-wrapper">
+          <a class="nav-link home" href="../index.html">Home</a>
+          <a class="nav-link calendar" href="../calendar/index.html">Calendar</a>
+          <a class="nav-link join" href="#">Join</a>
+        </div>
+      </nav>
+    </header>
+
+  <div class="main">
+    <div class="join-club">
+      <h2>Join Film Club</h2>
+      <form class = "join-form" action="index.html" method="push">
+        <div class="input-field profile-pic">
+          <div>
+              <label for="pic">profile picture</label>
+              <input type="file">
+              <div class="profile-img">
+                <img src="../images/profile-placeholder.png" alt="Profile Pic Placeholder">
+              </div>
+          </div>
+
+        </div>
+        <div class="profile-info">
+          <div class="input-field">
+            <label for="fullname">name</label>
+            <input type="text" name="fullname" id="fullname">
+          </div>
+          <div class="input-field">
+            <label for="emailaddr">email address</label>
+            <input type="text" name="emailaddr" id="emailaddr">
+          </div>
+          <div class="input-field">
+            <label for="pwd">password</label>
+            <input type="text" name="pwd" id="pwd">
+          </div>
+          <div class="input-field">
+            <label for="cpwd">confirm password</label>
+            <input type="text" name="cpwd" id="cpwd">
+          </div>
+
+        </div>
+        <div class="profile-genre">
+          <label for="genre-options">What genres are you interested in?</label>
+          <div class="input-genre">
+            <input type="checkbox" name="genre-options" id="action">
+            <label for="action">action</label>
+          </div>
+          <div class="input-genre">
+            <input type="checkbox" name="genre-options" id="adventure">
+            <label for="adventure">adventure</label>
+          </div>
+          <div class="input-genre">
+            <input type="checkbox" name="genre-options" id="comedy">
+            <label for="comedy">comedy</label>
+          </div>
+          <div class="input-genre">
+            <input type="checkbox" name="genre-options" id="drama">
+            <label for="drama">drama</label>
+          </div>
+          <div class="input-genre">
+            <input type="checkbox" name="genre-options" id="fantasy">
+            <label for="fantasy">fantasy</label>
+          </div>
+          <div class="input-genre">
+            <input type="checkbox" name="genre-options" id="historical">
+            <label for="historical">historical</label>
+          </div>
+          <div class="input-genre">
+            <input type="checkbox" name="genre-options" id="horror">
+            <label for="horror">horror</label>
+          </div>
+          <div class="input-genre">
+            <input type="checkbox" name="genre-options" id="mystery">
+            <label for="mystery">mystery</label>
+          </div>
+          <div class="input-genre">
+            <input type="checkbox" name="genre-options" id="romance">
+            <label for="romance">romance</label>
+          </div>
+          <div class="input-genre">
+            <input type="checkbox" name="genre-options" id="science-fiction">
+            <label for="science-fiction">science fiction</label>
+          </div>
+          <div>
+            <input type="checkbox" name="genre-options" id="western">
+            <label for="western">western</label>
+          </div>
+        </div>
+        <div class="add-input input-field">
+          <label for="addl-input">Additional Input</label>
+          <textarea name="addl-input"></textarea>
+        </div>
+        <div class="submit-btn">
+          <input type="submit" value="Join Film Club" id="submit">
+        </div>
+      </form>
+    </div>
+  </div>
+
+    <footer>
+      <div class="nav-links-wrapper">
+        <a class="nav-link home" href="#">Home</a>
+        <a class="nav-link calendar" href="./calendar/index.html">Calendar</a>
+        <a class="nav-link join" href="./join/index.html">Join</a>
+      </div>
+      <div class="copyright">
+        &copy 2017, Film Club
+      </div>
+    </footer>
+  </body>
+</html>
