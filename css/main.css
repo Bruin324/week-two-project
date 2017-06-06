@@ -92,8 +92,10 @@ footer {
 }
 
 /*///////////////////////////////////////
-            GET INVOLVED
+            HOME
 ///////////////////////////////////////*/
+
+/*///////////////GET INVOLVED//////////*/
 
 .get-involved {
   padding: 0px 20px 20px;
@@ -112,9 +114,8 @@ h2 {
   margin: 1em 0;
 }
 
-/*///////////////////////////////////////
-                UP NEXT
-///////////////////////////////////////*/
+/*///////////////UP NEXT//////////////////*/
+
 
 .up-next {
   background-color: #0B1942;
@@ -244,6 +245,7 @@ h1 {
 
 .add-input {
   padding: 1.5em 0;
+  width: 100%;
 }
 
 .add-input textarea{
@@ -286,6 +288,7 @@ h1 {
     display: flex;
   }
 
+  /*/////////////////HOME////////////////*/
 
   .get-involved {
     display: flex;
@@ -310,6 +313,49 @@ h1 {
     line-height: 5rem;
     padding: 20px;
   }
+
+  /*//////////////JOIN/////////////////*/
+
+  .join-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .join-club h2 {
+    width: 100%;
+  }
+
+  .profile-pic {
+    width: calc(50% - 2rem);
+  }
+
+  .profile-info {
+    width: calc(50% - 2rem);
+  }
+
+  .profile-info .input-field {
+    margin: 0em 0 1em;
+}
+
+  .profile-genre {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .profile-genre label {
+    width: 100%;
+  }
+
+  .input-genre {
+    width: 50%;
+  }
+
+  /*////////////CALENDAR/////////////////*/
+
+
 }
 
 
@@ -320,6 +366,9 @@ h1 {
 ///////////////////////////////////////
 ///////////////////////////////////////*/
 @media screen and (min-width: 769px) {
+
+  /*////////////////HOME///////////////*/
+
   .up-next {
     display: flex;
     flex-wrap: wrap;
@@ -343,4 +392,28 @@ h1 {
   .up-next-future {
     width: calc(50% - 20px);
   }
+
+/*////////////////JOIN///////////////*/
+
+  .profile-pic {
+    width: calc(33% - 2rem);
+  }
+  .profile-info {
+    width: calc(66% - 2rem);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .profile-info .input-field {
+    width: calc(50% - 1em);
+  }
+
+  .input-genre {
+    width: 33%;
+  }
+
 }
+
+/*//////////////CALENDAR///////////////*/
