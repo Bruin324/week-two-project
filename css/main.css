@@ -88,7 +88,7 @@ footer {
   text-align: center;
   padding: 30px;
   font-size: 1rem;
-  flex-basis: 30%;
+  flex-basis: 26%;
 }
 
 /*///////////////////////////////////////
@@ -198,7 +198,46 @@ h1 {
                 CALENDAR
 ///////////////////////////////////////*/
 
+#meetupcal {
+  margin: 1rem;
+}
 
+.calendar-wrapper {
+  background-color: #0B1942;
+}
+
+p.month {
+  color: #FFFFFF;
+  padding: 1em;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.calendar-week {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.calendar-day {
+  position: relative;
+  border: 1px solid #0B1942;
+  width: calc(100% / 7);
+  height: calc(100vw / 7);
+  background-color: #FFFFFF;
+}
+
+.highlighted-day {
+  background-color: #F5005B;
+}
+
+.day-num {
+  background-color: #0B1942;
+  color: #FFFFFF;
+  padding: .25em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 /*///////////////////////////////////////
                 JOIN FILM CLUB
